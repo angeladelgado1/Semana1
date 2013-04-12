@@ -15,7 +15,7 @@ private:
     string favorite_food;
 
 public:
-    Robot(string name,int power_level,string model);
+    Robot(string name,int power_level,string model,string favorite_food);
     string getName();
     int getPowerLevel();
     string getModel();
