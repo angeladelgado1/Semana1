@@ -10,6 +10,8 @@ int main()
     int power_level;
     string model;
     string favorite_food;
+    char resp;
+    //int steps,angle;
 
     cout << "Robot name? ";
     cin >> name;
@@ -28,6 +30,9 @@ int main()
     cout << endl << "Robot name:" << robot.getName() << endl;
     cout << "Robot power level:" << robot.getPowerLevel() << endl;
     cout << "Robot model:" << robot.getModel() << endl;
-    cout << "Robot Favorite Food: " << robot.getFavoriteFood();
+    cout << "Robot Favorite Food: " << robot.getFavoriteFood() << endl;
+    cout << "Do you want to move your robot? (Y/N) ";
+    cin >> resp;
+    robot.setRespuesta(resp);
     return 0;
 }
