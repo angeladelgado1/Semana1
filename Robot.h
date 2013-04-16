@@ -13,6 +13,7 @@ private:
     int power_level;
     string model;
     string favorite_food;
+    int angle,x,y,steps;
 
 public:
     Robot(string name,int power_level,string model,string favorite_food);
@@ -20,6 +21,10 @@ public:
     int getPowerLevel();
     string getModel();
     string getFavoriteFood();
+    void setRespuesta(char resp);
+    void setWalk (int steps);
+    void setAngle(int angle);
+    void printCoor();
     virtual ~Robot();
 };
 
